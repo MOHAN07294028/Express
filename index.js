@@ -16,11 +16,11 @@ app.use('/users',usersCall)
 //     res.send('Data Saved Successfully')
 // })
 
-// app.get('/',(req,res)=>{
-//     res.send('<h1>Mohanraj Srinivasan</h1>')
-// })
+app.get('/',(req,res)=>{
+    res.send('<h1>Mohanraj Srinivasan</h1>')
+})
 
 
 
 
-app.listen(8000,()=>console.log('App is running'))
+app.listen(process.env.port || 8000,()=>console.log('App is running'))
