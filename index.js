@@ -6,6 +6,7 @@ const usersCall = require('./Routes/users')
 const app = express();
 app.use(express.json());
 
+
 app.use('/login',loginCall)
 app.use('/logout',logoutCall)
 app.use('/users',usersCall)
