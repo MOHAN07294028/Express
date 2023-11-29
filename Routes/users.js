@@ -9,17 +9,25 @@ let data = [
         age:23
     },
     {
+        name:'Nagutha',
+        age:25
+    },
+    {
         name:'kaviya',
         age:21
     },
     {
-        name:'Nagutha',
-        age:25
+        name:'Surya',
+        age:23
+    },
+    {
+        name:'Priya',
+        age:23
     }
 ]
 
 // GET METHOD
-router.get('/numbers',(req,res)=>{
+router.get('/data',(req,res)=>{
     res
     .status(200)
     .send({
