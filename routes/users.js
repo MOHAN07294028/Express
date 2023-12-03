@@ -79,7 +79,7 @@ routes.put('/:id',async (req,res)=>{
         let data =await db.collection('users').updateOne({_id: new mongoDB.ObjectId(req.params.id)},{$set:req.body})
         res.status(200).send({
             resultBoolean:true,
-            data:'Data updated successfully'
+            data:'Data updated successfully da Mohan'
         })
     } catch (error) {
         res.status(400).send({
