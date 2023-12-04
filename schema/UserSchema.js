@@ -28,6 +28,6 @@ let UserSchema = mongoose.Schema(
   { collection: "user", versionKey: false }
 );
 
-let UserModal = mongoose.model("users", UserSchema);
+let UserModal = mongoose.model("user", UserSchema);
 
 module.exports = { UserModal };
