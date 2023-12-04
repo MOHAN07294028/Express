@@ -3,7 +3,10 @@ const mongoose = require("mongoose");
 const { UserModal } = require("../schema/UserSchema");
 const { dbUrl } = require("../config/dbConnection");
 const routes = express.Router();
-mongoose.connect(dbUrl);
+mongoose.connect(dbUrl,{
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 routes.get("/", async (req, res) => {
   try {
